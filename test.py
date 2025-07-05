@@ -1,4 +1,4 @@
-import torch
+import torch.library
 import os
 
 print(f"--- PyTorch Details ---")
