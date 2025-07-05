@@ -3,10 +3,10 @@ from datasets import load_dataset, Dataset
 
 # --- Configuration Section ---
 # Base directory where your Parquet files are located
-BASE_DATA_DIR = "/pasteur/u/lihe50hz/VLMTrans/flaviagiammarino/path-vqa/data"
+BASE_DATA_DIR = "/pasteur/u/lihe50hz/VLMTrans/data/flaviagiammarino/path-vqa/data"
 
 # Define the split you want to process (e.g., 'train', 'test', 'validation')
-SPLIT_TO_PROCESS = "train"
+SPLIT_TO_PROCESS = "validation"
 
 # The name of the text column in your dataset
 TEXT_COLUMN_NAME = "question" # Based on common VQA datasets, 'question' is more likely than 'text'
@@ -27,7 +27,7 @@ if not parquet_files:
 # The output path for the processed split.
 # It's good practice to rename it clearly, e.g., adding a "_processed" suffix.
 # You could also consider making a new directory for processed splits.
-OUTPUT_PARQUET_PATH = os.path.join(BASE_DATA_DIR, f"{SPLIT_TO_PROCESS}_processed.parquet")
+OUTPUT_PARQUET_PATH = f"/pasteur/u/lihe50hz/VLMTrans/data/flaviagiammarino/path-vqa/processed/{SPLIT_TO_PROCESS}.parquet"
 
 print(f"Found {len(parquet_files)} files for the '{SPLIT_TO_PROCESS}' split.")
 # print(f"Files to be loaded: {parquet_files}") # Uncomment to verify file list
@@ -75,29 +75,14 @@ else:
 
 
 # --- Step 6: Safely replace the original files for this split ---
-# Define a temporary output path for this processed split
-TEMP_OUTPUT_PARQUET_PATH = OUTPUT_PARQUET_PATH + ".temp"
 
 try:
-    print(f"\nSaving processed '{SPLIT_TO_PROCESS}' dataset to temporary file: {TEMP_OUTPUT_PARQUET_PATH}")
+    print(f"\nSaving processed '{SPLIT_TO_PROCESS}' dataset to file: {OUTPUT_PARQUET_PATH}")
     # When saving a split that was originally multiple files, it will be saved as one file.
     # If you want to keep the multi-file structure, you'd need to manually re-shard the dataset
     # before saving, which is more complex.
-    processed_dataset.to_parquet(TEMP_OUTPUT_PARQUET_PATH)
+    processed_dataset.to_parquet(OUTPUT_PARQUET_PATH)
     print(f"Processed dataset successfully saved to temporary file.")
-
-    # --- Replace original files with the new processed file ---
-    print(f"Removing original '{SPLIT_TO_PROCESS}' parquet files...")
-    for f in parquet_files:
-        if os.path.exists(f):
-            os.remove(f)
-            print(f"  Removed: {f}")
-        else:
-            print(f"  Warning: Original file {f} not found, skipping removal.")
-
-    print(f"Renaming temporary processed file to final output path: {OUTPUT_PARQUET_PATH}")
-    os.rename(TEMP_OUTPUT_PARQUET_PATH, OUTPUT_PARQUET_PATH)
-    print(f"'{SPLIT_TO_PROCESS}' dataset successfully updated to the latest version at: {OUTPUT_PARQUET_PATH}")
 
 except Exception as e:
     print(f"\nDataset update for '{SPLIT_TO_PROCESS}' split failed. Error: {e}")

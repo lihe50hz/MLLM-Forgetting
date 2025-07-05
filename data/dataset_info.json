@@ -716,8 +716,17 @@
     "folder": "python"
   },
   "pathvqa_train": {
-    "hf_hub_url": "flaviagiammarino/path-vqa",
+    "hf_hub_url": "/pasteur/u/lihe50hz/VLMTrans/data/flaviagiammarino/path-vqa/processed",
     "split": "train",
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
+      "images": "image"
+    }
+  },
+  "pathvqa_test": {
+    "hf_hub_url": "/pasteur/u/lihe50hz/VLMTrans/data/flaviagiammarino/path-vqa/processed",
+    "split": "test",
     "columns": {
       "prompt": "question",
       "response": "answer",
