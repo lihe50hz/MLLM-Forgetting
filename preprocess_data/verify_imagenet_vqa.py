@@ -11,7 +11,7 @@ def main():
     parser.add_argument(
         "--parquet_file",
         type=str,
-        default="/pasteur2/u/lihe50hz/imagenet-vqa/val/data.parquet",
+        default="/pasteur2/u/lihe50hz/imagenet-vqa/val/val-00002-of-00002.parquet",
         help="Path to the Parquet file to verify.",
     )
     parser.add_argument(

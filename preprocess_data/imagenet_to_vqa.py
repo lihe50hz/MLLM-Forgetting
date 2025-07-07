@@ -13,6 +13,7 @@ from torchvision.datasets import ImageFolder
 from tqdm import tqdm
 from transformers import CLIPModel, CLIPProcessor
 import ast
+import gc
 
 def load_dict_from_txt(filepath):
     """

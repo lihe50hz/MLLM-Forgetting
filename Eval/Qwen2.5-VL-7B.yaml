@@ -13,7 +13,7 @@ lora_rank: 8
 lora_target: all
 
 ### dataset
-eval_dataset: pathvqa_test  # video: mllm_video_demo
+eval_dataset: imagenet_vqa_val  # video: mllm_video_demo
 template: qwen2_vl
 cutoff_len: 16384
 overwrite_cache: true
@@ -21,12 +21,12 @@ preprocessing_num_workers: 16
 dataloader_num_workers: 4
 
 ### output
-output_dir: saves/qwen2_5vl-7b/lora-sft-pathvqa-eval-test
+output_dir: saves/qwen2_5vl-7b/lora-sft-imagenet-vqa/checkpoint-0/eval
 plot_loss: true
 overwrite_output_dir: true
 save_only_model: false
 report_to: wandb  # choices: [none, wandb, tensorboard, swanlab, mlflow]
-run_name: qwen2_5vl-7b-lora-sft-pathvqa-eval-test
+run_name: qwen2_5vl-7b-lora-sft-imagenet-vqa-checkpoint-0
 
 ### eval
 per_device_eval_batch_size: 1
