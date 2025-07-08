@@ -7,18 +7,16 @@ trust_remote_code: true
 ### method
 stage: sft
 do_train: true
-do_predict: true
 finetuning_type: lora
 lora_rank: 8
 lora_target: all
 
 ### dataset
 dataset: imagenet_vqa_train
-streaming: true  # video: mllm_video_demo
 template: qwen2_vl
 cutoff_len: 16384
 overwrite_cache: true
-preprocessing_num_workers: 1
+preprocessing_num_workers: 16
 dataloader_num_workers: 4
 
 ### output
@@ -35,18 +33,10 @@ run_name: qwen2_5vl-7b-lora-sft-imagenet-vqa
 per_device_train_batch_size: 1 #
 gradient_accumulation_steps: 8 # using 4 L40s, 8*4
 learning_rate: 1.0e-4
-# num_train_epochs: 1.0
-max_steps: 40000
+num_train_epochs: 1.0
 lr_scheduler_type: cosine
 warmup_ratio: 0.1
 bf16: true
 ddp_timeout: 180000000
 resume_from_checkpoint: null
 flash_attn: fa2
-
-### eval
-predict_with_generate: true
-eval_dataset: imagenet_vqa_val 
-per_device_eval_batch_size: 1
-eval_strategy: steps
-eval_steps: 2000
