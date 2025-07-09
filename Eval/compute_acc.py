@@ -31,8 +31,12 @@ def compute_accuracy(jsonl_file_path):
             if 'predict' in entry and 'label' in entry:
                 predict = str(entry['predict']).strip()
                 label = str(entry['label']).strip()
+
+                if ":" in predict:
+                    predict = predict.split(":")[-1].strip()
                 
-                if predict.startswith(label):
+                if predict == label or predict.startswith(f"{label}."):
+            
                     correct_predictions += 1
                 total_predictions += 1
             else:
@@ -44,7 +48,6 @@ def compute_accuracy(jsonl_file_path):
     
     accuracy = (correct_predictions / total_predictions) * 100
     return accuracy
-
 
 def main():
     parser = argparse.ArgumentParser(description='Compute accuracy from JSONL predictions')
