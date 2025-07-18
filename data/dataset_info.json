@@ -1,6 +1,6 @@
 {
   "pathvqa_test": {
-    "hf_hub_url": "/pasteur/u/lihe50hz/VLMTrans/data/flaviagiammarino/path-vqa/processed",
+    "file_name": "/pasteur/u/lihe50hz/VLMTrans/data/flaviagiammarino/path-vqa/processed",
     "split": "test",
     "columns": {
       "prompt": "question",
@@ -9,8 +9,7 @@
     }
   },
   "imagenet_vqa_val": {
-    "hf_hub_url": "/pasteur2/u/lihe50hz/imagenet-vqa/val",
-    "split": "validation",
+    "file_name": "/pasteur2/u/lihe50hz/imagenet-vqa/val",
     "columns": {
         "prompt": "prompt", 
         "response": "response", 
@@ -18,8 +17,7 @@
     }
   },
   "imagenet_vqa_train": {
-    "hf_hub_url": "/pasteur2/u/lihe50hz/imagenet-vqa/train",
-    "split": "train",
+    "file_name": "/pasteur2/u/lihe50hz/imagenet-vqa/train",
     "columns": {
         "prompt": "prompt", 
         "response": "response", 
