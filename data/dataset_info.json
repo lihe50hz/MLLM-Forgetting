@@ -23,5 +23,69 @@
         "response": "response", 
         "images": "image"
     }
+  },
+  "flowers102_vqa_test": {
+    "file_name": "/pasteur2/u/lihe50hz/flowers102-vqa/test",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response",
+      "images": "image"
+    }
+  },
+  "flowers102_vqa_train": {
+    "file_name": "/pasteur2/u/lihe50hz/flowers102-vqa/train",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response",
+      "images": "image"
+    }
+  },
+  "caltech101_vqa_test": {
+    "file_name": "/pasteur2/u/lihe50hz/caltech101-vqa/test",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response",
+      "images": "image"
+    }
+  },
+  "caltech101_vqa_train": {
+    "file_name": "/pasteur2/u/lihe50hz/caltech101-vqa/train",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response",
+      "images": "image"
+    }
+  },
+  "stanfordcars_vqa_test": {
+    "file_name": "/pasteur2/u/lihe50hz/stanfordcars-vqa/test",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response",
+      "images": "image"
+    }
+  },
+  "stanfordcars_vqa_train": {
+    "file_name": "/pasteur2/u/lihe50hz/stanfordcars-vqa/train",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response",
+      "images": "image"
+    }
+  },
+  "imagewikiqa_vqa": {
+    "file_name": "/pasteur2/u/lihe50hz/imagewikiqa-vqa",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response",
+      "images": "image"
+    }
+  },
+  "imagenetv2_vqa": {
+    "file_name": "/pasteur2/u/lihe50hz/imagenetv2-vqa",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response",
+      "images": "image"
+    }
   }
 }
