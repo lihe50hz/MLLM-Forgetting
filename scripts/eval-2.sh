@@ -61,106 +61,77 @@ export WANDB_PROJECT="VLM-Transfer"
 # llamafactory-cli train Qwen2.5-VL-3B/temp/LoRA/imagewikiqa-40000.yaml
 # llamafactory-cli train Qwen2.5-VL-3B/temp/LoRA/stanfordcars-40000.yaml
 
-# # Full - Script 2 gets: 20000, 40000, 60000, 80000
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/caltech101-20000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/flower102-20000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/imagenetv2-20000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/imagewikiqa-20000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/stanfordcars-20000.yaml
+# Full - Script 2 gets: 40000, 60000, 80000
 
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/caltech101-40000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/flower102-40000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/imagenetv2-40000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/imagewikiqa-40000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/stanfordcars-40000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full/caltech101-40000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full/flower102-40000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full/imagenetv2-40000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full/imagewikiqa-40000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full/stanfordcars-40000.yaml
 
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/caltech101-60000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/flower102-60000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/imagenetv2-60000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/imagewikiqa-60000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/stanfordcars-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full/caltech101-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full/flower102-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full/imagenetv2-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full/imagewikiqa-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full/stanfordcars-60000.yaml
 
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/caltech101-80000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/flower102-80000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/imagenetv2-80000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/imagewikiqa-80000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full/stanfordcars-80000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full/caltech101-80000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full/flower102-80000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full/imagenetv2-80000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full/imagewikiqa-80000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full/stanfordcars-80000.yaml
 
-# # Encoder - Script 2 gets: 20000, 40000, 60000, 80000
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/caltech101-20000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/flower102-20000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/imagenetv2-20000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/imagewikiqa-20000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/stanfordcars-20000.yaml
+# Encoder - Script 2 gets: 40000, 60000, 80000
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/caltech101-40000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/flower102-40000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/imagenetv2-40000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/imagewikiqa-40000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/stanfordcars-40000.yaml
 
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/caltech101-40000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/flower102-40000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/imagenetv2-40000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/imagewikiqa-40000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/stanfordcars-40000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/caltech101-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/flower102-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/imagenetv2-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/imagewikiqa-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/stanfordcars-60000.yaml
 
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/caltech101-60000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/flower102-60000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/imagenetv2-60000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/imagewikiqa-60000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/stanfordcars-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/caltech101-80000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/flower102-80000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/imagenetv2-80000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/imagewikiqa-80000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/stanfordcars-80000.yaml
 
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/caltech101-80000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/flower102-80000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/imagenetv2-80000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/imagewikiqa-80000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder/stanfordcars-80000.yaml
+# Full+Projector - Script 2 gets: 60000, 80000
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/caltech101-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/flower102-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/imagenetv2-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/imagewikiqa-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/stanfordcars-60000.yaml
 
-# # Full+Projector - Script 2 gets: 20000, 40000, 60000, 80000
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/caltech101-20000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/flower102-20000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/imagenetv2-20000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/imagewikiqa-20000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/stanfordcars-20000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/caltech101-80000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/flower102-80000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/imagenetv2-80000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/imagewikiqa-80000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/stanfordcars-80000.yaml
 
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/caltech101-40000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/flower102-40000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/imagenetv2-40000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/imagewikiqa-40000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/stanfordcars-40000.yaml
+# Encoder+Projector - Script 2 gets: 40000, 60000, 80000
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/caltech101-40000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/flower102-40000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/imagenetv2-40000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/imagewikiqa-40000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/stanfordcars-40000.yaml
 
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/caltech101-60000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/flower102-60000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/imagenetv2-60000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/imagewikiqa-60000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/stanfordcars-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/caltech101-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/flower102-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/imagenetv2-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/imagewikiqa-60000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/stanfordcars-60000.yaml
 
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/caltech101-80000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/flower102-80000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/imagenetv2-80000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/imagewikiqa-80000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Full+Projector/stanfordcars-80000.yaml
-
-# # Encoder+Projector - Script 2 gets: 20000, 40000, 60000, 80000
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/caltech101-20000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/flower102-20000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/imagenetv2-20000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/imagewikiqa-20000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/stanfordcars-20000.yaml
-
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/caltech101-40000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/flower102-40000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/imagenetv2-40000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/imagewikiqa-40000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/stanfordcars-40000.yaml
-
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/caltech101-60000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/flower102-60000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/imagenetv2-60000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/imagewikiqa-60000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/stanfordcars-60000.yaml
-
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/caltech101-80000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/flower102-80000.yaml
-# llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/imagenetv2-80000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/caltech101-80000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/flower102-80000.yaml
+llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/imagenetv2-80000.yaml
 # llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/imagewikiqa-80000.yaml
 # llamafactory-cli train Qwen2.5-VL-3B/temp/Encoder+Projector/stanfordcars-80000.yaml
 
-# Baseline - Script 2 gets: 2 files
-llamafactory-cli train Qwen2.5-VL-3B/temp/Baseline/imagewikiqa.yaml
-llamafactory-cli train Qwen2.5-VL-3B/temp/Baseline/stanfordcars.yaml
+# # Baseline - Script 2 gets: 2 files
+# llamafactory-cli train Qwen2.5-VL-3B/temp/Baseline/imagewikiqa.yaml
+# llamafactory-cli train Qwen2.5-VL-3B/temp/Baseline/stanfordcars.yaml
