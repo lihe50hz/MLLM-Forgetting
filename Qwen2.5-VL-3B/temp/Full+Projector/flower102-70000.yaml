@@ -22,7 +22,7 @@ dataloader_num_workers: 4
 cache_dir: /pasteur/u/lihe50hz/.cache/huggingface/llama-factory
 
 ### output
-output_dir: saves/qwen2_5vl-3b/full+projector-sft-imagenet-vqa/checkpoint-10000/flowers102-test
+output_dir: saves/qwen2_5vl-3b/full+projector-sft-imagenet-vqa/checkpoint-70000/flowers102-test
 plot_loss: true
 overwrite_output_dir: true
 save_only_model: false

@@ -22,12 +22,12 @@ dataloader_num_workers: 4
 cache_dir: /pasteur/u/lihe50hz/.cache/huggingface/llama-factory
 
 ### output
-output_dir: saves/qwen2_5vl-3b/full+projector-sft-imagenet-vqa/checkpoint-10000/flowers102-test
+output_dir: saves/qwen2_5vl-3b/full+projector-sft-imagenet-vqa/checkpoint-80000/flowers102-test
 plot_loss: true
 overwrite_output_dir: true
 save_only_model: false
 report_to: wandb  # choices: [none, wandb, tensorboard, swanlab, mlflow]
-run_name: qwen2_5vl-3b-full+projector-sft-imagenet-vqa-checkpoint-10000-flowers102-test
+run_name: qwen2_5vl-3b-full+projector-sft-imagenet-vqa-checkpoint-80000-flowers102-test
 
 ### eval
 per_device_eval_batch_size: 32

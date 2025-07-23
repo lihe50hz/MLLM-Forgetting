@@ -34,6 +34,9 @@ def compute_accuracy(jsonl_file_path):
 
                 if ":" in predict:
                     predict = predict.split(":")[-1].strip()
+
+                # if "is" in predict:
+                #     predict = predict.split("is")[-1].strip()
                 
                 if predict == label or predict.startswith(f"{label}."):
             
@@ -67,8 +70,9 @@ def main():
         with open(jsonl_file_path, 'r', encoding='utf-8') as f:
             total_lines = sum(1 for line in f if line.strip())
         
-        print(f"Total entries processed: {total_lines}")
-        print(f"Mean Accuracy: {accuracy:.2f}%")
+        # print(f"Total entries processed: {total_lines}")
+        # print(f"Mean Accuracy: {accuracy:.2f}%")
+        print(f"{accuracy:.2f}%")
     except Exception as e:
         print(f"Error processing file: {e}")
 
