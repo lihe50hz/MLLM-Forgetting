@@ -1,4 +1,13 @@
 {
+  "pathvqa_train": {
+    "hf_hub_url": "/pasteur/u/lihe50hz/VLMTrans/data/flaviagiammarino/path-vqa/processed",
+    "split": "train",
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
+      "images": "image"
+    }
+  },
   "pathvqa_test": {
     "file_name": "/pasteur/u/lihe50hz/VLMTrans/data/flaviagiammarino/path-vqa/processed",
     "split": "test",

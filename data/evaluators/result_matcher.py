@@ -37,7 +37,9 @@ def compute_accuracy(jsonl_file_path):
 
                 # if "is" in predict:
                 #     predict = predict.split("is")[-1].strip()
-                
+                # turn predict to all uppercase
+                predict = predict.upper()
+                label = label.upper()
                 if predict == label or predict.startswith(f"{label}."):
             
                     correct_predictions += 1

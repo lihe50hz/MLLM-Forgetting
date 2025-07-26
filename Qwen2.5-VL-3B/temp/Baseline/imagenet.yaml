@@ -21,12 +21,12 @@ dataloader_num_workers: 4
 cache_dir: /pasteur/u/lihe50hz/.cache/huggingface/llama-factory
 
 ### output
-output_dir: saves/qwen2_5vl-3b/lora-sft-imagenet-vqa/checkpoint-0/eval-new-template
+output_dir: saves/qwen2_5vl-3b/lora-sft-imagenet-vqa/checkpoint-0/eval
 plot_loss: true
 overwrite_output_dir: true
 save_only_model: false
 report_to: wandb  # choices: [none, wandb, tensorboard, swanlab, mlflow]
-run_name: qwen2_5vl-3b-lora-sft-imagenet-vqa-checkpoint-0-new-template
+run_name: qwen2_5vl-3b-lora-sft-imagenet-vqa-checkpoint-0
 
 ### eval
 per_device_eval_batch_size: 32

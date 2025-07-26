@@ -33,4 +33,4 @@ run_name: qwen2_5vl-3b-encoder-highlr-sft-imagenet-vqa-checkpoint-70000-stanford
 per_device_eval_batch_size: 32
 predict_with_generate: true
 ddp_timeout: 180000000
-flash_attn: fa2
+# flash_attn: fa2
