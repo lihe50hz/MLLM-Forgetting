@@ -1,5 +1,5 @@
 ### model
-model_name_or_path: liuhaotian/llava-v1.5-7b
+model_name_or_path: llava-hf/llava-1.5-7b-hf
 image_max_pixels: 262144
 video_max_pixels: 16384
 trust_remote_code: true
@@ -11,10 +11,10 @@ finetuning_type: full
 freeze_vision_tower: true
 freeze_multi_modal_projector: true
 freeze_language_model: false
-# deepspeed: cache/ds_z2_config.json
+deepspeed: cache/ds_z2_config.json
 
 ### dataset
-dataset: imagenet_vqa_train
+dataset: imagenet_vqa_train_for_llava
 template: llava_new
 cutoff_len: 16384
 # overwrite_cache: true
@@ -41,5 +41,5 @@ lr_scheduler_type: cosine
 warmup_ratio: 0.1
 bf16: true
 ddp_timeout: 180000000
-resume_from_checkpoint: null # saves/qwen2_5vl-3b/full-sft-imagenet-vqa/checkpoint-50000
+resume_from_checkpoint: true # saves/qwen2_5vl-3b/full-sft-imagenet-vqa/checkpoint-50000
 flash_attn: fa2

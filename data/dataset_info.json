@@ -33,6 +33,14 @@
         "images": "image"
     }
   },
+  "imagenet_vqa_train_for_llava": {
+    "file_name": "/pasteur2/u/lihe50hz/imagenet-vqa/train",
+    "columns": {
+        "prompt": "prompt", 
+        "response": "response", 
+        "images": "image"
+    }
+  },
   "flowers102_vqa_test": {
     "file_name": "/pasteur2/u/lihe50hz/flowers102-vqa/test",
     "columns": {

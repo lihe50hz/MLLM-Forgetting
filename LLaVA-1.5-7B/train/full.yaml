@@ -1,5 +1,5 @@
 ### model
-model_name_or_path: liuhaotian/llava-v1.5-7b
+model_name_or_path: llava-hf/llava-1.5-7b-hf
 image_max_pixels: 262144
 video_max_pixels: 16384
 trust_remote_code: true
@@ -14,8 +14,8 @@ freeze_language_model: false
 deepspeed: cache/ds_z2_config.json
 
 ### dataset
-dataset: imagenet_vqa_train
-template: qwen2_vl
+dataset: imagenet_vqa_train_for_llava
+template: llava_new
 cutoff_len: 16384
 # overwrite_cache: true
 preprocessing_num_workers: 16
