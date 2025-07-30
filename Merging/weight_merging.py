@@ -118,30 +118,25 @@ def load_model(checkpoint_path: str, model_type: str, device: str = 'cpu') -> Un
     else:
         logger.info(f"Loading {model_type} model from local path: {checkpoint_path}")
     
-    try:
-        if model_type == 'qwen2_5_vl':
-            model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
-                checkpoint_path,
-                torch_dtype=torch.float32,  # Use float32 for merging to avoid precision issues
-                device_map=None,  # Load to CPU first for merging
-                trust_remote_code=True
-            )
-        elif model_type == 'llava':
-            model = LlavaForConditionalGeneration.from_pretrained(
-                checkpoint_path,
-                torch_dtype=torch.float32,  # Use float32 for merging to avoid precision issues
-                device_map=None  # Load to CPU first for merging
-            )
-        else:
-            raise ValueError(f"Unsupported model type: {model_type}")
-        
-        model = model.to(device)
-        logger.info(f"Successfully loaded {model_type} model")
-        return model
-        
-    except Exception as e:
-        logger.error(f"Failed to load model from {checkpoint_path}: {e}")
-        raise
+    if model_type == 'qwen2_5_vl':
+        model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+            checkpoint_path,
+            torch_dtype=torch.float32,  # Use float32 for merging to avoid precision issues
+            device_map=None,  # Load to CPU first for merging
+            trust_remote_code=True
+        )
+    elif model_type == 'llava':
+        model = LlavaForConditionalGeneration.from_pretrained(
+            checkpoint_path,
+            torch_dtype=torch.float32,  # Use float32 for merging to avoid precision issues
+            device_map=None  # Load to CPU first for merging
+        )
+    else:
+        raise ValueError(f"Unsupported model type: {model_type}")
+    
+    model = model.to(device)
+    logger.info(f"Successfully loaded {model_type} model")
+    return model
 
 def merge_model_weights(
     model1: Union[Qwen2_5_VLForConditionalGeneration, LlavaForConditionalGeneration],

@@ -1,57 +1,8 @@
 export WANDB_PROJECT="VLM-Transfer"
 
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/caltech101-10000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/flowers102-10000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagenet-10000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagenetv2-10000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagewikiqa-10000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/stanfordcars-10000.yaml
-
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/caltech101-20000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/flowers102-20000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagenet-20000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagenetv2-20000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagewikiqa-20000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/stanfordcars-20000.yaml
-
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/caltech101-30000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/flowers102-30000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagenet-30000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagenetv2-30000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagewikiqa-30000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/stanfordcars-30000.yaml
-
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/caltech101-40000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/flowers102-40000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagenet-40000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagenetv2-40000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagewikiqa-40000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/stanfordcars-40000.yaml
-
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/caltech101-50000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/flowers102-50000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagenet-50000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagenetv2-50000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagewikiqa-50000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/stanfordcars-50000.yaml
-
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/caltech101-60000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/flowers102-60000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagenet-60000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagenetv2-60000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagewikiqa-60000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/stanfordcars-60000.yaml
-
-llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/caltech101-70000.yaml
-llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/flowers102-70000.yaml
-llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagenet-70000.yaml
-llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagenetv2-70000.yaml
-llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagewikiqa-70000.yaml
-llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/stanfordcars-70000.yaml
-
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/caltech101-80000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/flowers102-80000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagenet-80000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagenetv2-80000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/imagewikiqa-80000.yaml
-# llamafactory-cli train LLaVA-1.5-7B/temp/Full-lowlr/stanfordcars-80000.yaml
+# llamafactory-cli train Qwen2.5-VL-7B/temp/Baseline-new/imagenet.yaml
+llamafactory-cli train Qwen2.5-VL-7B/temp/Baseline-new/flowers102.yaml
+# llamafactory-cli train Qwen2.5-VL-7B/temp/Baseline-new/stanfordcars.yaml
+# llamafactory-cli train Qwen2.5-VL-7B/temp/Baseline-new/caltech101.yaml
+# llamafactory-cli train Qwen2.5-VL-7B/temp/Baseline-new/imagenetv2.yaml
+# llamafactory-cli train Qwen2.5-VL-7B/temp/Baseline-new/imagewikiqa.yaml
