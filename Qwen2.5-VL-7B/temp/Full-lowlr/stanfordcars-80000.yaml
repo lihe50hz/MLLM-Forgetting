@@ -1,0 +1,32 @@
+### model
+model_name_or_path: working/qwen2_5vl-7b/full-lowlr-sft-imagenet-vqa/checkpoint-80000
+image_max_pixels: 262144
+video_max_pixels: 16384
+trust_remote_code: true
+
+### method
+stage: sft
+do_predict: true
+
+### dataset
+eval_dataset: stanfordcars_vqa_test
+template: qwen2_vl
+cutoff_len: 16384
+# overwrite_cache: true
+preprocessing_num_workers: 16
+dataloader_num_workers: 4
+cache_dir: /pasteur/u/lihe50hz/.cache/huggingface/llama-factory
+
+### output
+output_dir: working/qwen2_5vl-7b/full-lowlr-sft-imagenet-vqa/checkpoint-80000/stanfordcars-test
+plot_loss: true
+overwrite_output_dir: true
+save_only_model: false
+report_to: wandb  # choices: [none, wandb, tensorboard, swanlab, mlflow]
+run_name: qwen2_5vl-7b-full-lowlr-sft-imagenet-vqa-checkpoint-80000-stanfordcars-test
+
+### eval
+per_device_eval_batch_size: 8
+predict_with_generate: true
+ddp_timeout: 180000000
+flash_attn: fa2 

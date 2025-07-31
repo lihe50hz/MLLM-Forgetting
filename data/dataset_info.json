@@ -1,6 +1,6 @@
 {
   "pathvqa_train": {
-    "hf_hub_url": "/pasteur/u/lihe50hz/VLMTrans/data/flaviagiammarino/path-vqa/processed",
+    "hf_hub_url": "/pasteur2/u/lihe50hz/flaviagiammarino/path-vqa/processed",
     "split": "train",
     "columns": {
       "prompt": "question",
@@ -9,7 +9,7 @@
     }
   },
   "pathvqa_test": {
-    "file_name": "/pasteur/u/lihe50hz/VLMTrans/data/flaviagiammarino/path-vqa/processed",
+    "file_name": "/pasteur2/u/lihe50hz/flaviagiammarino/path-vqa/processed",
     "split": "test",
     "columns": {
       "prompt": "question",
@@ -102,6 +102,86 @@
     "columns": {
       "prompt": "prompt",
       "response": "response",
+      "images": "image"
+    }
+  },
+  "RS_train": {
+    "file_name": "/pasteur2/u/lihe50hz/RS/train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "image"
+    }
+  },
+  "RS_test": {
+    "file_name": "/pasteur2/u/lihe50hz/RS/test.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "image"
+    }
+  },
+  "Med_train": {
+    "file_name": "/pasteur2/u/lihe50hz/Med/train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "image"
+    }
+  },
+  "Med_test": {
+    "file_name": "/pasteur2/u/lihe50hz/Med/test.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "image"
+    }
+  },
+  "AD_train": {
+    "file_name": "/pasteur2/u/lihe50hz/AD/train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "image"
+    }
+  },
+  "AD_test": {
+    "file_name": "/pasteur2/u/lihe50hz/AD/test.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "image"
+    }
+  },
+  "Sci_train": {
+    "file_name": "/pasteur2/u/lihe50hz/Sci/train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "image"
+    }
+  },
+  "Sci_test": {
+    "file_name": "/pasteur2/u/lihe50hz/Sci/test.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "image"
+    }
+  },
+  "Fin_train": {
+    "file_name": "/pasteur2/u/lihe50hz/Fin/train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "image"
+    }
+  },
+  "Fin_test": {
+    "file_name": "/pasteur2/u/lihe50hz/Fin/test.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
       "images": "image"
     }
   }
