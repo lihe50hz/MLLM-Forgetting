@@ -29,7 +29,8 @@ report_to: wandb  # choices: [none, wandb, tensorboard, swanlab, mlflow]
 run_name: qwen2_5vl-3b-baseline-Fin
 
 ### eval
-per_device_eval_batch_size: 32
+media_dir: /pasteur2/u/lihe50hz/MLLM-CL/Fin/
+per_device_eval_batch_size: 1
 predict_with_generate: true
 ddp_timeout: 180000000
 flash_attn: fa2

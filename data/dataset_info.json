@@ -114,10 +114,11 @@
     }
   },
   "RS_test": {
-    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/RS/test.json",
-    "formatting": "sharegpt",
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/RS/test_with_token.json",
+    "formatting": "alpaca",
     "columns": {
-      "messages": "conversations",
+      "prompt": "text",
+      "response": "answer",
       "images": "image"
     }
   },
@@ -130,10 +131,11 @@
     }
   },
   "Med_test": {
-    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Med/test.json",
-    "formatting": "sharegpt",
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Med/test_with_token.json",
+    "formatting": "alpaca",
     "columns": {
-      "messages": "conversations",
+      "prompt": "text",
+      "response": "answer",
       "images": "image"
     }
   },
@@ -146,10 +148,11 @@
     }
   },
   "AD_test": {
-    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/AD/test.json",
-    "formatting": "sharegpt",
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/AD/test_with_token.json",
+    "formatting": "alpaca",
     "columns": {
-      "messages": "conversations",
+      "prompt": "text",
+      "response": "answer",
       "images": "image"
     }
   },
@@ -162,10 +165,11 @@
     }
   },
   "Sci_test": {
-    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Sci/test.json",
-    "formatting": "sharegpt",
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Sci/test_with_token.json",
+    "formatting": "alpaca",
     "columns": {
-      "messages": "conversations",
+      "prompt": "text",
+      "response": "answer",
       "images": "image"
     }
   },
@@ -178,10 +182,11 @@
     }
   },
   "Fin_test": {
-    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Fin/test.json",
-    "formatting": "sharegpt",
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Fin/test_with_token.json",
+    "formatting": "alpaca",
     "columns": {
-      "messages": "conversations",
+      "prompt": "text",
+      "response": "answer",
       "images": "image"
     }
   }
