@@ -106,7 +106,7 @@
     }
   },
   "RS_train": {
-    "file_name": "/pasteur2/u/lihe50hz/RS/train.json",
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/RS/train.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -114,7 +114,7 @@
     }
   },
   "RS_test": {
-    "file_name": "/pasteur2/u/lihe50hz/RS/test.json",
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/RS/test.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -122,7 +122,7 @@
     }
   },
   "Med_train": {
-    "file_name": "/pasteur2/u/lihe50hz/Med/train.json",
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Med/train.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -130,7 +130,7 @@
     }
   },
   "Med_test": {
-    "file_name": "/pasteur2/u/lihe50hz/Med/test.json",
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Med/test.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -138,7 +138,7 @@
     }
   },
   "AD_train": {
-    "file_name": "/pasteur2/u/lihe50hz/AD/train.json",
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/AD/train.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -146,7 +146,7 @@
     }
   },
   "AD_test": {
-    "file_name": "/pasteur2/u/lihe50hz/AD/test.json",
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/AD/test.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -154,7 +154,7 @@
     }
   },
   "Sci_train": {
-    "file_name": "/pasteur2/u/lihe50hz/Sci/train.json",
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Sci/train.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -162,7 +162,7 @@
     }
   },
   "Sci_test": {
-    "file_name": "/pasteur2/u/lihe50hz/Sci/test.json",
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Sci/test.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -170,7 +170,7 @@
     }
   },
   "Fin_train": {
-    "file_name": "/pasteur2/u/lihe50hz/Fin/train.json",
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Fin/train.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -178,7 +178,7 @@
     }
   },
   "Fin_test": {
-    "file_name": "/pasteur2/u/lihe50hz/Fin/test.json",
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Fin/test.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
