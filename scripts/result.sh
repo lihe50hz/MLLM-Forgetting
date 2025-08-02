@@ -1,78 +1,72 @@
-python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/lora-sft-imagenet-vqa/checkpoint-0/eval-new/generated_predictions.jsonl
-python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/lora-sft-imagenet-vqa/checkpoint-0/flowers102-test-new/generated_predictions.jsonl
-python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/lora-sft-imagenet-vqa/checkpoint-0/stanfordcars-test-new/generated_predictions.jsonl
-python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/lora-sft-imagenet-vqa/checkpoint-0/caltech101-test-new/generated_predictions.jsonl
-python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/lora-sft-imagenet-vqa/checkpoint-0/imagenetv2-new/generated_predictions.jsonl
-python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/lora-sft-imagenet-vqa/checkpoint-0/imagewikiqa-new/generated_predictions.jsonl
+# python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/lora-sft-imagenet-vqa/checkpoint-0/eval-new/generated_predictions.jsonl
+# python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/lora-sft-imagenet-vqa/checkpoint-0/flowers102-test-new/generated_predictions.jsonl
+# python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/lora-sft-imagenet-vqa/checkpoint-0/stanfordcars-test-new/generated_predictions.jsonl
+# python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/lora-sft-imagenet-vqa/checkpoint-0/caltech101-test-new/generated_predictions.jsonl
+# python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/lora-sft-imagenet-vqa/checkpoint-0/imagenetv2-new/generated_predictions.jsonl
+# python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/lora-sft-imagenet-vqa/checkpoint-0/imagewikiqa-new/generated_predictions.jsonl
 
 
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.1/eval/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.2/eval/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.3/eval/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.4/eval/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.5/eval/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.6/eval/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.7/eval/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.8/eval/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.9/eval/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-10000/eval/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-20000/eval/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-30000/eval/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-40000/eval/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-50000/eval/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-60000/eval/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-70000/eval/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-80000/eval/generated_predictions.jsonl
 
-# echo "--------------------------------"
+echo "--------------------------------"
 
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.1/flowers102-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.2/flowers102-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.3/flowers102-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.4/flowers102-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.5/flowers102-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.6/flowers102-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.7/flowers102-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.8/flowers102-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.9/flowers102-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-10000/flowers102-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-20000/flowers102-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-30000/flowers102-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-40000/flowers102-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-50000/flowers102-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-60000/flowers102-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-70000/flowers102-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-80000/flowers102-test/generated_predictions.jsonl
 
-# echo "--------------------------------"
+echo "--------------------------------"
 
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.1/stanfordcars-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.2/stanfordcars-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.3/stanfordcars-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.4/stanfordcars-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.5/stanfordcars-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.6/stanfordcars-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.7/stanfordcars-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.8/stanfordcars-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.9/stanfordcars-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-10000/stanfordcars-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-20000/stanfordcars-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-30000/stanfordcars-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-40000/stanfordcars-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-50000/stanfordcars-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-60000/stanfordcars-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-70000/stanfordcars-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-80000/stanfordcars-test/generated_predictions.jsonl
 
-# echo "--------------------------------"
+echo "--------------------------------"
 
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.1/caltech101-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.2/caltech101-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.3/caltech101-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.4/caltech101-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.5/caltech101-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.6/caltech101-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.7/caltech101-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.8/caltech101-test/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.9/caltech101-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-10000/caltech101-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-20000/caltech101-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-30000/caltech101-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-40000/caltech101-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-50000/caltech101-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-60000/caltech101-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-70000/caltech101-test/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-80000/caltech101-test/generated_predictions.jsonl
 
-# echo "--------------------------------"
+echo "--------------------------------"
 
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.1/imagenetv2/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.2/imagenetv2/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.3/imagenetv2/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.4/imagenetv2/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.5/imagenetv2/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.6/imagenetv2/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.7/imagenetv2/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.8/imagenetv2/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.9/imagenetv2/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-10000/imagenetv2/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-20000/imagenetv2/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-30000/imagenetv2/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-40000/imagenetv2/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-50000/imagenetv2/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-60000/imagenetv2/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-70000/imagenetv2/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-80000/imagenetv2/generated_predictions.jsonl
 
-# echo "--------------------------------"
+echo "--------------------------------"
 
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.1/imagewikiqa/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.2/imagewikiqa/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.3/imagewikiqa/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.4/imagewikiqa/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.5/imagewikiqa/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.6/imagewikiqa/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.7/imagewikiqa/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.8/imagewikiqa/generated_predictions.jsonl
-# python data/evaluators/result_matcher.py --file saves/qwen2_5vl-3b/full-merge/merged-lambda-0.9/imagewikiqa/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-10000/imagewikiqa/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-20000/imagewikiqa/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-30000/imagewikiqa/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-40000/imagewikiqa/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-50000/imagewikiqa/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-60000/imagewikiqa/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-70000/imagewikiqa/generated_predictions.jsonl
+python data/evaluators/result_matcher.py --file working/qwen2_5vl-7b/full-sft-imagenet-vqa/checkpoint-80000/imagewikiqa/generated_predictions.jsonl
 

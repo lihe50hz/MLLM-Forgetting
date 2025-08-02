@@ -1,1 +1,0 @@
-llamafactory-cli train Qwen2.5-VL-7B/temp/Baseline-new/flowers102.yaml
