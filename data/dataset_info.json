@@ -1,22 +1,4 @@
 {
-  "pathvqa_train": {
-    "hf_hub_url": "/pasteur2/u/lihe50hz/flaviagiammarino/path-vqa/processed",
-    "split": "train",
-    "columns": {
-      "prompt": "question",
-      "response": "answer",
-      "images": "image"
-    }
-  },
-  "pathvqa_test": {
-    "file_name": "/pasteur2/u/lihe50hz/flaviagiammarino/path-vqa/processed",
-    "split": "test",
-    "columns": {
-      "prompt": "question",
-      "response": "answer",
-      "images": "image"
-    }
-  },
   "imagenet_vqa_val": {
     "file_name": "/pasteur2/u/lihe50hz/imagenet-vqa/val",
     "columns": {
@@ -25,8 +7,32 @@
         "images": "image"
     }
   },
+  "imagenet_vqa_val_json": {
+    "file_name": "/pasteur2/u/lihe50hz/imagenet-vqa-json/val/val.json",
+    "columns": {
+        "prompt": "prompt", 
+        "response": "response", 
+        "images": "image"
+    }
+  },
   "imagenet_vqa_train": {
     "file_name": "/pasteur2/u/lihe50hz/imagenet-vqa/train",
+    "columns": {
+        "prompt": "prompt", 
+        "response": "response", 
+        "images": "image"
+    }
+  },
+  "imagenet_vqa_train_json": {
+    "file_name": "/pasteur2/u/lihe50hz/imagenet-vqa-json/train/train.json",
+    "columns": {
+        "prompt": "prompt", 
+        "response": "response", 
+        "images": "image"
+    }
+  },
+  "imagenet_fakevqa_train_json": {
+    "file_name": "/pasteur2/u/lihe50hz/imagenet-fakevqa-json/train/train.json",
     "columns": {
         "prompt": "prompt", 
         "response": "response", 
@@ -49,8 +55,24 @@
       "images": "image"
     }
   },
+  "flowers102_vqa_test_json": {
+    "file_name": "/pasteur2/u/lihe50hz/flowers102-vqa-json/test/test.json",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response",
+      "images": "image"
+    }
+  },
   "flowers102_vqa_train": {
     "file_name": "/pasteur2/u/lihe50hz/flowers102-vqa/train",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response",
+      "images": "image"
+    }
+  },
+  "flowers102_vqa_train_json": {
+    "file_name": "/pasteur2/u/lihe50hz/flowers102-vqa-json/train/train.json",
     "columns": {
       "prompt": "prompt",
       "response": "response",
@@ -188,6 +210,121 @@
       "prompt": "text",
       "response": "answer",
       "images": "image"
+    }
+  },
+  "APP_train": {
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/APP/train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "image"
+    }
+  },
+  "APP_test": {
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/APP_test/test_with_token.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "text",
+      "response": "answer",
+      "images": "image"
+    }
+  },
+  "OCR_train": {
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/OCR/train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "image"
+    }
+  },
+  "OCR_test": {
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/OCR_test/test_with_token.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "text",
+      "response": "answer",
+      "images": "image"
+    }
+  },
+  "chartqa_train": {
+    "file_name": "/pasteur2/u/lihe50hz/Multi-task/ChartQA/processed/train.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
+      "images": "image_path"
+    }
+  },
+  "chartqa_val": {
+    "file_name": "/pasteur2/u/lihe50hz/Multi-task/ChartQA/processed/val.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
+      "images": "image_path"
+    }
+  },
+  "chartqa_test": {
+    "file_name": "/pasteur2/u/lihe50hz/Multi-task/ChartQA/processed/test.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
+      "images": "image_path"
+    }
+  },
+  "ocrvqa_train": {
+    "file_name": "/pasteur2/u/lihe50hz/Multi-task/OCR-VQA/processed/train.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
+      "images": "image_path"
+    }
+  },
+  "ocrvqa_val": {
+    "file_name": "/pasteur2/u/lihe50hz/Multi-task/OCR-VQA/processed/val.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
+      "images": "image_path"
+    }
+  },
+  "ocrvqa_test": {
+    "file_name": "/pasteur2/u/lihe50hz/Multi-task/OCR-VQA/processed/test.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
+      "images": "image_path"
+    }
+  },
+  "pathvqa_train": {
+    "file_name": "/pasteur2/u/lihe50hz/Multi-task/PathVQA/processed/train.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
+      "images": "image_path"
+    }
+  },
+  "pathvqa_val": {
+    "file_name": "/pasteur2/u/lihe50hz/Multi-task/PathVQA/processed/val.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
+      "images": "image_path"
+    }
+  },
+  "pathvqa_test": {
+    "file_name": "/pasteur2/u/lihe50hz/Multi-task/PathVQA/processed/test.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
+      "images": "image_path"
     }
   }
 }
