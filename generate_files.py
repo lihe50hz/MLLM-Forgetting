@@ -4,49 +4,49 @@ import os
 
 # Dataset configurations
 datasets = {
-    'caltech101': {
-        'eval_dataset': 'caltech101_vqa_test',
-        'output_suffix': 'caltech101-test',
-        'run_suffix': 'caltech101-test'
-    },
-    'stanfordcars': {
-        'eval_dataset': 'stanfordcars_vqa_test',
-        'output_suffix': 'stanfordcars-test',
-        'run_suffix': 'stanfordcars-test'
-    },
-    'imagewikiqa': {
-        'eval_dataset': 'imagewikiqa_vqa',
-        'output_suffix': 'imagewikiqa',
-        'run_suffix': 'imagewikiqa'
-    },
-    'imagenetv2': {
-        'eval_dataset': 'imagenetv2_vqa',
-        'output_suffix': 'imagenetv2',
-        'run_suffix': 'imagenetv2'
-    },
+    # 'caltech101': {
+    #     'eval_dataset': 'caltech101_vqa_test',
+    #     'output_suffix': 'caltech101-test',
+    #     'run_suffix': 'caltech101-test'
+    # },
+    # 'stanfordcars': {
+    #     'eval_dataset': 'stanfordcars_vqa_test',
+    #     'output_suffix': 'stanfordcars-test',
+    #     'run_suffix': 'stanfordcars-test'
+    # },
+    # 'imagewikiqa': {
+    #     'eval_dataset': 'imagewikiqa_vqa',
+    #     'output_suffix': 'imagewikiqa',
+    #     'run_suffix': 'imagewikiqa'
+    # },
+    # 'imagenetv2': {
+    #     'eval_dataset': 'imagenetv2_vqa',
+    #     'output_suffix': 'imagenetv2',
+    #     'run_suffix': 'imagenetv2'
+    # },
     'imagenet': {
-        'eval_dataset': 'imagenet_vqa_val',
+        'eval_dataset': 'imagenet_vqa_val_json',
         'output_suffix': 'eval',
         'run_suffix': 'eval'
     },
     'flowers102': {
-        'eval_dataset': 'flowers102_vqa_test',
+        'eval_dataset': 'flowers102_vqa_test_json',
         'output_suffix': 'flowers102-test',
         'run_suffix': 'flowers102-test'
     }
 }
 
 # Checkpoints to generate
-checkpoints = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250]
+checkpoints = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200]
 
-identifier = 'flowers102-cl'
+identifier = 'flowers102'
 
 # Base directory
 base_dir = '/pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/' + identifier
 os.makedirs(base_dir, exist_ok=True)
 
-checkpoint_dir = 'working/qwen2_5vl-3b/full-lowlr-sft-flowers102-cl'
-run_name = 'qwen2_5vl-3b-full-lowlr-sft-flowers102-cl'
+checkpoint_dir = 'working/qwen2_5vl-3b/full-lowlr-sft-flowers102'
+run_name = 'qwen2_5vl-3b-full-lowlr-sft-flowers102'
 
 # YAML template
 yaml_template = """### model

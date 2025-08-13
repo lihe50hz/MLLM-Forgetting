@@ -1,59 +1,59 @@
 
 export WANDB_PROJECT="VLM-Transfer"
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-10.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-10.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-10.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-10.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-10.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-10.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-20.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-20.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-20.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-20.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-20.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-20.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-30.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-30.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-30.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-30.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-30.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-30.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-40.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-40.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-40.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-40.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-40.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-40.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-50.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-50.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-50.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-50.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-50.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-50.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-60.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-60.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-60.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-60.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-60.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-60.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-70.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-70.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-70.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-70.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-70.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-70.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-80.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-80.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-80.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-80.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-80.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-80.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-90.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-90.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-90.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-90.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-90.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-90.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-10.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-10.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-10.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-10.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-10.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-10.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-20.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-20.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-20.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-20.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-20.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-20.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-30.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-30.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-30.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-30.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-30.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-30.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-40.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-40.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-40.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-40.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-40.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-40.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-50.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-50.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-50.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-50.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-50.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-50.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-60.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-60.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-60.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-60.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-60.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-60.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-70.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-70.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-70.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-70.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-70.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-70.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-80.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-80.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-80.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-80.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-80.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-80.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-90.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-90.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-90.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-90.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-90.yaml
+# llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-90.yaml
 llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-100.yaml
 llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-100.yaml
 llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-100.yaml
@@ -120,33 +120,3 @@ llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers10
 llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-200.yaml
 llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-200.yaml
 llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-200.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-210.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-210.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-210.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-210.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-210.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-210.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-220.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-220.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-220.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-220.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-220.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-220.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-230.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-230.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-230.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-230.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-230.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-230.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-240.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-240.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-240.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-240.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-240.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-240.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/caltech101-250.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/stanfordcars-250.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagewikiqa-250.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenetv2-250.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/imagenet-250.yaml
-llamafactory-cli train /pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/flowers102-cl/flowers102-250.yaml

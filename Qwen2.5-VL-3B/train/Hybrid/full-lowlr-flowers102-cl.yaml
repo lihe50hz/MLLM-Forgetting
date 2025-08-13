@@ -1,5 +1,5 @@
 ### model
-model_name_or_path: saves/qwen2_5vl-3b/full-lowlr-sft-imagenet-vqa
+model_name_or_path: saves/qwen2_5vl-3b/full-lowlr-sft-imagenet-vqa/checkpoint-80000
 image_max_pixels: 262144
 video_max_pixels: 16384
 trust_remote_code: true
@@ -38,8 +38,8 @@ run_name: qwen2_5vl-3b-full-lowlr-sft-flowers102-cl
 per_device_train_batch_size: 1 # using 4 L40s
 gradient_accumulation_steps: 4 # using 4 L40s, 4*4
 learning_rate: 1.0e-6
-num_train_epochs: 2.0
-# max_steps: 80000
+# num_train_epochs: 2.0
+max_steps: 200
 lr_scheduler_type: cosine
 warmup_ratio: 0.1
 bf16: true
