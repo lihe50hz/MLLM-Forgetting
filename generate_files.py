@@ -4,26 +4,26 @@ import os
 
 # Dataset configurations
 datasets = {
-    # 'caltech101': {
-    #     'eval_dataset': 'caltech101_vqa_test',
-    #     'output_suffix': 'caltech101-test',
-    #     'run_suffix': 'caltech101-test'
-    # },
-    # 'stanfordcars': {
-    #     'eval_dataset': 'stanfordcars_vqa_test',
-    #     'output_suffix': 'stanfordcars-test',
-    #     'run_suffix': 'stanfordcars-test'
-    # },
-    # 'imagewikiqa': {
-    #     'eval_dataset': 'imagewikiqa_vqa',
-    #     'output_suffix': 'imagewikiqa',
-    #     'run_suffix': 'imagewikiqa'
-    # },
-    # 'imagenetv2': {
-    #     'eval_dataset': 'imagenetv2_vqa',
-    #     'output_suffix': 'imagenetv2',
-    #     'run_suffix': 'imagenetv2'
-    # },
+    'caltech101': {
+        'eval_dataset': 'caltech101_vqa_test',
+        'output_suffix': 'caltech101-test',
+        'run_suffix': 'caltech101-test'
+    },
+    'stanfordcars': {
+        'eval_dataset': 'stanfordcars_vqa_test',
+        'output_suffix': 'stanfordcars-test',
+        'run_suffix': 'stanfordcars-test'
+    },
+    'imagewikiqa': {
+        'eval_dataset': 'imagewikiqa_vqa',
+        'output_suffix': 'imagewikiqa',
+        'run_suffix': 'imagewikiqa'
+    },
+    'imagenetv2': {
+        'eval_dataset': 'imagenetv2_vqa',
+        'output_suffix': 'imagenetv2',
+        'run_suffix': 'imagenetv2'
+    },
     'imagenet': {
         'eval_dataset': 'imagenet_vqa_val_json',
         'output_suffix': 'eval',
@@ -37,16 +37,16 @@ datasets = {
 }
 
 # Checkpoints to generate
-checkpoints = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200]
+checkpoints = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000]
 
-identifier = 'flowers102'
+identifier = 'flowers102-cl-8000'
 
 # Base directory
 base_dir = '/pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/' + identifier
 os.makedirs(base_dir, exist_ok=True)
 
-checkpoint_dir = 'working/qwen2_5vl-3b/full-lowlr-sft-flowers102'
-run_name = 'qwen2_5vl-3b-full-lowlr-sft-flowers102'
+checkpoint_dir = 'working/qwen2_5vl-3b/full-lowlr-sft-flowers102-cl-8000'
+run_name = 'qwen2_5vl-3b-full-lowlr-sft-flowers102-cl-8000'
 
 # YAML template
 yaml_template = """### model
