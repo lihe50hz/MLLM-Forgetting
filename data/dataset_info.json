@@ -87,8 +87,24 @@
       "images": "image"
     }
   },
+  "caltech101_vqa_test_json": {
+    "file_name": "/pasteur2/u/lihe50hz/caltech101-vqa-json/test/test.json",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response",
+      "images": "image"
+    }
+  },
   "caltech101_vqa_train": {
     "file_name": "/pasteur2/u/lihe50hz/caltech101-vqa/train",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response",
+      "images": "image"
+    }
+  },
+  "caltech101_vqa_train_json": {
+    "file_name": "/pasteur2/u/lihe50hz/caltech101-vqa-json/train/train.json",
     "columns": {
       "prompt": "prompt",
       "response": "response",
@@ -103,8 +119,24 @@
       "images": "image"
     }
   },
+  "stanfordcars_vqa_test_json": {
+    "file_name": "/pasteur2/u/lihe50hz/stanfordcars-vqa-json/test/test.json",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response",
+      "images": "image"
+    }
+  },
   "stanfordcars_vqa_train": {
     "file_name": "/pasteur2/u/lihe50hz/stanfordcars-vqa/train",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response",
+      "images": "image"
+    }
+  },
+  "stanfordcars_vqa_train_json": {
+    "file_name": "/pasteur2/u/lihe50hz/stanfordcars-vqa-json/train/train.json",
     "columns": {
       "prompt": "prompt",
       "response": "response",
@@ -119,8 +151,24 @@
       "images": "image"
     }
   },
+  "imagewikiqa_vqa_json": {
+    "file_name": "/pasteur2/u/lihe50hz/imagewikiqa-vqa-json/test/test.json",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response",
+      "images": "image"
+    }
+  },
   "imagenetv2_vqa": {
     "file_name": "/pasteur2/u/lihe50hz/imagenetv2-vqa",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response",
+      "images": "image"
+    }
+  },
+  "imagenetv2_vqa_json": {
+    "file_name": "/pasteur2/u/lihe50hz/imagenetv2-vqa-json/test/test.json",
     "columns": {
       "prompt": "prompt",
       "response": "response",
@@ -238,7 +286,41 @@
     }
   },
   "OCR_test": {
-    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/OCR_test/test_with_token.json",
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/OCR_test/test_with_token_nolist.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "text",
+      "response": "answer",
+      "images": "image"
+    }
+  },
+  "VP_train": {
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/VP/train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "image"
+    }
+  },
+  "VP_test": {
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/VP_test/test_with_token.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "text",
+      "response": "answer",
+      "images": "image"
+    }
+  },
+  "Math_train": {
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Math/train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "image"
+    }
+  },
+  "Math_test": {
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Math_test/test_with_token.json",
     "formatting": "alpaca",
     "columns": {
       "prompt": "text",
@@ -329,6 +411,54 @@
   },
   "llava_665k_instruct": {
     "file_name": "/pasteur2/u/lihe50hz/playground/llava_v1_5_mix665k_prefix.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "image"
+    }
+  },
+  "surgical_vqa_train": {
+    "file_name": "/pasteur2/u/lihe50hz/surgical_vqa/train_vqa_dataset.json",
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
+      "images": "image"
+    }
+  },
+  "surgical_vqa_test": {
+    "file_name": "/pasteur2/u/lihe50hz/surgical_vqa/test_vqa_dataset.json",
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
+      "images": "image"
+    }
+  },
+  "bsccm_vqa_train": {
+    "file_name": "/pasteur2/u/lihe50hz/BSCCM_vqa/train_vqa_dataset.json",
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
+      "images": "image"
+    }
+  },
+  "bsccm_vqa_test": {
+    "file_name": "/pasteur2/u/lihe50hz/BSCCM_vqa/test_vqa_dataset.json",
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
+      "images": "image"
+    }
+  },
+  "domain_sample20": {
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Domain_data_list_sample20.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "image"
+    }
+  },
+  "ability_sample20": {
+    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Ability_data_list_sample20.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",

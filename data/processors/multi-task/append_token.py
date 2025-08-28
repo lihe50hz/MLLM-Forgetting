@@ -61,5 +61,9 @@ if __name__ == "__main__":
     # output_file = "/pasteur2/u/lihe50hz/MLLM-CL/APP_test/test_with_token.json"
     input_file = "/pasteur2/u/lihe50hz/MLLM-CL/OCR_test/test.json"
     output_file = "/pasteur2/u/lihe50hz/MLLM-CL/OCR_test/test_with_token.json"
+    # input_file = "/pasteur2/u/lihe50hz/MLLM-CL/VP_test/test.json"
+    # output_file = "/pasteur2/u/lihe50hz/MLLM-CL/VP_test/test_with_token.json"
+    # input_file = "/pasteur2/u/lihe50hz/MLLM-CL/Math_test/test.json"
+    # output_file = "/pasteur2/u/lihe50hz/MLLM-CL/Math_test/test_with_token.json"
     # Process the file
     process_json_file(input_file, output_file)

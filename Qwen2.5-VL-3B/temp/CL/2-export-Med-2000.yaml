@@ -1,0 +1,11 @@
+### model
+model_name_or_path: working/qwen2_5vl-3b/lora-sft-cl/RS/export
+adapter_name_or_path: working/qwen2_5vl-3b/lora-sft-cl/Med/checkpoint-2000
+template: qwen2_vl
+trust_remote_code: true
+
+### export
+export_dir: working/qwen2_5vl-3b/lora-sft-cl/Med/export
+export_size: 5
+export_device: cpu  # choices: [cpu, auto]
+export_legacy_format: false

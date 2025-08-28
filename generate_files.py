@@ -37,16 +37,16 @@ datasets = {
 }
 
 # Checkpoints to generate
-checkpoints = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000]
+checkpoints = [10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000]
 
-identifier = 'flowers102-cl-8000'
+identifier = 'hybrid-llava-0.5'
 
 # Base directory
 base_dir = '/pasteur/u/lihe50hz/VLMTrans/Qwen2.5-VL-3B/temp/' + identifier
 os.makedirs(base_dir, exist_ok=True)
 
-checkpoint_dir = 'working/qwen2_5vl-3b/full-lowlr-sft-flowers102-cl-8000'
-run_name = 'qwen2_5vl-3b-full-lowlr-sft-flowers102-cl-8000'
+checkpoint_dir = 'working/qwen2_5vl-3b/full-lowlr-sft-imagenet-vqa-hybrid-llava-0.5'
+run_name = 'qwen2_5vl-3b-full-lowlr-sft-imagenet-vqa-hybrid-llava-0.5'
 
 # YAML template
 yaml_template = """### model

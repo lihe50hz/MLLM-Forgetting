@@ -1,0 +1,11 @@
+### model
+model_name_or_path: liuhaotian/llava-v1.5-mlp2x-336px-pretrain-vicuna-7b-v1.5
+adapter_name_or_path: working/llava-vicuna-7b/lora-sft-cl/RS/checkpoint-2000
+template: llava
+trust_remote_code: true
+
+### export
+export_dir: working/llava-vicuna-7b/lora-sft-cl/RS/export
+export_size: 5
+export_device: cpu  # choices: [cpu, auto]
+export_legacy_format: false
