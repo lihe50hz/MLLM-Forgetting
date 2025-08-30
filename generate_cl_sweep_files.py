@@ -37,7 +37,7 @@ cl_domains = {
     }
 }
 
-def generate_cl_sweep(learning_rate=2.0e-5, warmup_ratio=0.03, identifier_suffix=""):
+def generate_cl_sweep(learning_rate=2.0e-5, warmup_ratio=0.03, lora_rank=128, identifier_suffix=""):
     """Generate continual learning domain adaptation sweep files"""
     
     # Create base directory for CL sweep
@@ -56,7 +56,7 @@ def generate_cl_sweep(learning_rate=2.0e-5, warmup_ratio=0.03, identifier_suffix
         os.makedirs(dir_path, exist_ok=True)
     
     # Generate training configs
-    generate_cl_train_configs(train_dir, learning_rate, warmup_ratio, identifier_suffix)
+    generate_cl_train_configs(train_dir, learning_rate, warmup_ratio, lora_rank, identifier_suffix)
     
     # Generate export configs
     generate_cl_export_configs(export_dir, identifier_suffix)
@@ -69,7 +69,7 @@ def generate_cl_sweep(learning_rate=2.0e-5, warmup_ratio=0.03, identifier_suffix
     
     print(f"Generated complete CL sweep in: {cl_base_dir}")
 
-def generate_cl_train_configs(train_dir, learning_rate, warmup_ratio, identifier_suffix):
+def generate_cl_train_configs(train_dir, learning_rate, warmup_ratio, lora_rank, identifier_suffix):
     """Generate training configuration files"""
     
     train_template = """### model
@@ -82,7 +82,7 @@ trust_remote_code: true
 stage: sft
 do_train: true
 finetuning_type: lora
-lora_rank: 128
+lora_rank: {lora_rank}
 lora_target: all # language_model
 # full projector 
 additional_target: [projector]
@@ -140,7 +140,8 @@ flash_attn: fa2
             run_name=f"llava-1.5-7b-lora-sft-cl-align-projector{'-' + identifier_suffix if identifier_suffix else ''}-{domain.lower()}",
             learning_rate=learning_rate,
             epochs=config['epochs'],
-            warmup_ratio=warmup_ratio
+            warmup_ratio=warmup_ratio,
+            lora_rank=lora_rank
         )
         
         filename = f"{i+1}-lora-{domain}.yaml"
@@ -281,7 +282,11 @@ def generate_cl_scripts(scripts_dir, base_dir, identifier_suffix):
         # Add evaluation commands for all domains immediately after export
         for eval_domain in cl_domains.keys():
             eval_config = os.path.join(base_dir, 'eval', f"{i+1}-{domain}", f"{eval_domain}.yaml")
-            script_content += f"llamafactory-cli train {eval_config}\n"
+            # skip all the domains except the last one for faster sweep
+            if i == len(sorted_domains) - 1:
+                script_content += f"llamafactory-cli train {eval_config}\n"
+            else:
+                script_content += f"# llamafactory-cli train {eval_config}\n"
         
         script_content += "\n"
     
@@ -314,9 +319,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Generate continual learning sweep files for domain adaptation')
     parser.add_argument('--learning_rate', type=float, default=2.0e-5, help='Learning rate for continual learning sweep')
     parser.add_argument('--warmup_ratio', type=float, default=0.03, help='Warmup ratio for continual learning sweep')
+    parser.add_argument('--lora_rank', type=int, default=128, help='LoRA rank for continual learning sweep')
     parser.add_argument('--identifier', type=str, default='default', help='Identifier suffix for file naming')
     
     args = parser.parse_args()
     
-    generate_cl_sweep(learning_rate=args.learning_rate, warmup_ratio=args.warmup_ratio, identifier_suffix=args.identifier)
+    generate_cl_sweep(learning_rate=args.learning_rate, warmup_ratio=args.warmup_ratio, lora_rank=args.lora_rank, identifier_suffix=args.identifier)
     print("Continual learning sweep generated successfully!")
