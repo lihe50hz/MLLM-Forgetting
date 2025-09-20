@@ -1,0 +1,47 @@
+### model
+model_name_or_path: working/llava-1.5-7b/lora-sft-cl-align-projector-lr6e-5-warm0.1-rank8/Med/export
+image_max_pixels: 262144
+video_max_pixels: 16384
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_rank: 8
+lora_target: all # language_model
+# full projector 
+additional_target: [projector]
+
+### dataset
+dataset: AD_train
+# mix_strategy: concat # interleave_under, interleave_upper
+# interleave_probs: [0.2, 0.2, 0.2, 0.2, 0.2]
+template: llava
+cutoff_len: 16384
+# overwrite_cache: true
+preprocessing_num_workers: 16
+dataloader_num_workers: 4
+cache_dir: /pasteur/u/lihe50hz/.cache/huggingface/llama-factory
+
+### output
+output_dir: working/llava-1.5-7b/lora-sft-cl-align-projector-lr6e-5-warm0.1-rank8/AD
+logging_steps: 10
+save_steps: 500
+plot_loss: true
+overwrite_output_dir: true
+save_only_model: false
+report_to: wandb  # choices: [none, wandb, tensorboard, swanlab, mlflow]
+run_name: llava-1.5-7b-lora-sft-cl-align-projector-lr6e-5-warm0.1-rank8-ad
+
+### train
+per_device_train_batch_size: 1 # using 8 L40s
+gradient_accumulation_steps: 16 # using 8 L40s, 8*4
+learning_rate: 6e-05
+num_train_epochs: 1.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+resume_from_checkpoint: null
+flash_attn: fa2

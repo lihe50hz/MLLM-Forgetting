@@ -68,7 +68,8 @@ def eval_single(result_file, output_dir, prefix='Default'):
     with open(output_file, 'w') as f:
         for item in pred_list:
             json.dump(item, f)
-            f.write('\n')    
+            f.write('\n')   
+    return 100. * right / total
 
 def eval_single_original(result_file, output_dir, prefix='Default'):
     experiment_name = os.path.splitext(os.path.basename(result_file))[0]
@@ -128,7 +129,7 @@ def eval_single_original(result_file, output_dir, prefix='Default'):
         for item in pred_list:
             json.dump(item, f)
             f.write('\n')        
-
+    return 100. * right / total
 if __name__ == "__main__":
     args = get_args()
     eval_single(args.result_file, args.output_dir)

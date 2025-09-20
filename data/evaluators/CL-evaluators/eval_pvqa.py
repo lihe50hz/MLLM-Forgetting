@@ -51,6 +51,8 @@ def eval_single(result_file, output_dir, prefix='Default'):
         for item in pred_list:
             json.dump(item, f)
             f.write('\n')
+    
+    return 100. * right / total
 
 
 def eval_single_original(result_file, output_dir, prefix='Default'):
@@ -93,8 +95,8 @@ def eval_single_original(result_file, output_dir, prefix='Default'):
         for item in pred_list:
             json.dump(item, f)
             f.write('\n')  
-
+    return 100. * right / total
 if __name__ == "__main__":
     args = get_args()
 
-    eval_single(args.result_file, args.output_dir)
+    eval_single_original(args.result_file, args.output_dir, 'Original-Pathology-VQA')

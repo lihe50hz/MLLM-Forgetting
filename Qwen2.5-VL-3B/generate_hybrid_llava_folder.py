@@ -42,7 +42,7 @@ cache_dir: /pasteur/u/lihe50hz/.cache/huggingface/llama-factory
 ### output
 output_dir: working/qwen2_5vl-3b/full-lowlr-sft-imagenet-vqa-{folder_name}
 logging_steps: 10
-save_steps: 10000
+save_steps: 80000
 plot_loss: true
 overwrite_output_dir: true
 save_only_model: false
@@ -152,15 +152,15 @@ def create_train_eval_script(folder_path: str, folder_name: str) -> str:
     
     # Add main training command
     script_content += f"llamafactory-cli train {folder_path}/full-lowlr-{folder_name}.yaml\n\n"
-    
+    checkpoint_steps = [80000] # list(range(10000, 90000, 10000))
     # Add imagenet evaluation commands
-    for step in range(10000, 90000, 10000):
+    for step in checkpoint_steps:
         script_content += f"llamafactory-cli train {folder_path}/imagenet-{step}.yaml\n"
     
     script_content += "\n"
     
     # Add imagewikiqa evaluation commands
-    for step in range(10000, 90000, 10000):
+    for step in checkpoint_steps:
         script_content += f"llamafactory-cli train {folder_path}/imagewikiqa-{step}.yaml\n"
     
     return script_content
@@ -186,7 +186,7 @@ def generate_hybrid_llava_folder(input_number: float):
     print(f"Created: {full_config_path}")
     
     # Generate evaluation configs for each checkpoint step
-    checkpoint_steps = range(10000, 90000, 10000)
+    checkpoint_steps = [80000] # list(range(10000, 90000, 10000))
     
     for step in checkpoint_steps:
         # ImageNet evaluation config

@@ -302,13 +302,13 @@ def generate_result_script(scripts_dir, identifier_suffix):
     """Generate result evaluation script"""
     
     result_script_content = 'echo "-------baseline--------"\n'
-    result_script_content += 'python data/evaluators/CL-evaluators/eval_all.py --result-dir working/llava-1.5-7b/lora-sft-cl/Baseline\n'
+    result_script_content += 'python data/evaluators/CL-evaluators/eval_all_orginal.py --result-dir working/llava-1.5-7b/lora-sft-cl/Baseline\n'
     
     sorted_domains = sorted(cl_domains.items(), key=lambda x: x[1]['order'])
     
     for domain, config in sorted_domains:
         result_script_content += f'echo "-------After {domain}--------"\n'
-        result_script_content += f'python data/evaluators/CL-evaluators/eval_all.py --result-dir working/llava-1.5-7b/lora-sft-cl-align-projector{"-" + identifier_suffix if identifier_suffix else ""}/{domain}\n'
+        result_script_content += f'python data/evaluators/CL-evaluators/eval_all_orginal.py --result-dir working/llava-1.5-7b/lora-sft-cl-align-projector{"-" + identifier_suffix if identifier_suffix else ""}/{domain}\n'
     
     result_script_path = os.path.join(scripts_dir, f"result-cl-sweep{'-' + identifier_suffix if identifier_suffix else ''}.sh")
     with open(result_script_path, 'w') as f:

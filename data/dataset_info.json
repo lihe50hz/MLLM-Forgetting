@@ -31,6 +31,14 @@
         "images": "image"
     }
   },
+  "imagenet_vqa_train_json_10_percent": {
+    "file_name": "/pasteur2/u/lihe50hz/imagenet-vqa-json/train/train_10_percent.json",
+    "columns": {
+        "prompt": "prompt", 
+        "response": "response", 
+        "images": "image"
+    }
+  },
   "imagenet_fakevqa_train_json": {
     "file_name": "/pasteur2/u/lihe50hz/imagenet-fakevqa-json/train/train.json",
     "columns": {
@@ -502,6 +510,41 @@
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
+      "images": "image"
+    }
+  },
+  "medical_vqa_train": {
+    "file_name": "/pasteur2/u/lihe50hz/ML4H/Medical-VQA/vqa-rad/train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "image"
+    }
+  },
+  "medical_vqa_test": {
+    "file_name": "/pasteur2/u/lihe50hz/ML4H/Medical-VQA/vqa-rad/test.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "response": "output",
+      "images": "image"
+    }
+  },
+  "radiology_vqa_train": {
+    "file_name": "/pasteur2/u/lihe50hz/ML4H/ROCOv2/train.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
+      "images": "image"
+    }
+  },
+  "radiology_vqa_test": {
+    "file_name": "/pasteur2/u/lihe50hz/ML4H/ROCOv2/test.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
       "images": "image"
     }
   }
