@@ -1,22 +1,6 @@
 {
-  "imagenet_vqa_val": {
-    "file_name": "/pasteur2/u/lihe50hz/imagenet-vqa/val",
-    "columns": {
-        "prompt": "prompt", 
-        "response": "response", 
-        "images": "image"
-    }
-  },
   "imagenet_vqa_val_json": {
     "file_name": "/pasteur2/u/lihe50hz/imagenet-vqa-json/val/val.json",
-    "columns": {
-        "prompt": "prompt", 
-        "response": "response", 
-        "images": "image"
-    }
-  },
-  "imagenet_vqa_train": {
-    "file_name": "/pasteur2/u/lihe50hz/imagenet-vqa/train",
     "columns": {
         "prompt": "prompt", 
         "response": "response", 
@@ -31,48 +15,8 @@
         "images": "image"
     }
   },
-  "imagenet_vqa_train_json_10_percent": {
-    "file_name": "/pasteur2/u/lihe50hz/imagenet-vqa-json/train/train_10_percent.json",
-    "columns": {
-        "prompt": "prompt", 
-        "response": "response", 
-        "images": "image"
-    }
-  },
-  "imagenet_fakevqa_train_json": {
-    "file_name": "/pasteur2/u/lihe50hz/imagenet-fakevqa-json/train/train.json",
-    "columns": {
-        "prompt": "prompt", 
-        "response": "response", 
-        "images": "image"
-    }
-  },
-  "imagenet_vqa_train_for_llava": {
-    "file_name": "/pasteur2/u/lihe50hz/imagenet-vqa/train",
-    "columns": {
-        "prompt": "prompt", 
-        "response": "response", 
-        "images": "image"
-    }
-  },
-  "flowers102_vqa_test": {
-    "file_name": "/pasteur2/u/lihe50hz/flowers102-vqa/test",
-    "columns": {
-      "prompt": "prompt",
-      "response": "response",
-      "images": "image"
-    }
-  },
   "flowers102_vqa_test_json": {
     "file_name": "/pasteur2/u/lihe50hz/flowers102-vqa-json/test/test.json",
-    "columns": {
-      "prompt": "prompt",
-      "response": "response",
-      "images": "image"
-    }
-  },
-  "flowers102_vqa_train": {
-    "file_name": "/pasteur2/u/lihe50hz/flowers102-vqa/train",
     "columns": {
       "prompt": "prompt",
       "response": "response",
@@ -87,24 +31,8 @@
       "images": "image"
     }
   },
-  "caltech101_vqa_test": {
-    "file_name": "/pasteur2/u/lihe50hz/caltech101-vqa/test",
-    "columns": {
-      "prompt": "prompt",
-      "response": "response",
-      "images": "image"
-    }
-  },
   "caltech101_vqa_test_json": {
     "file_name": "/pasteur2/u/lihe50hz/caltech101-vqa-json/test/test.json",
-    "columns": {
-      "prompt": "prompt",
-      "response": "response",
-      "images": "image"
-    }
-  },
-  "caltech101_vqa_train": {
-    "file_name": "/pasteur2/u/lihe50hz/caltech101-vqa/train",
     "columns": {
       "prompt": "prompt",
       "response": "response",
@@ -119,24 +47,8 @@
       "images": "image"
     }
   },
-  "stanfordcars_vqa_test": {
-    "file_name": "/pasteur2/u/lihe50hz/stanfordcars-vqa/test",
-    "columns": {
-      "prompt": "prompt",
-      "response": "response",
-      "images": "image"
-    }
-  },
   "stanfordcars_vqa_test_json": {
     "file_name": "/pasteur2/u/lihe50hz/stanfordcars-vqa-json/test/test.json",
-    "columns": {
-      "prompt": "prompt",
-      "response": "response",
-      "images": "image"
-    }
-  },
-  "stanfordcars_vqa_train": {
-    "file_name": "/pasteur2/u/lihe50hz/stanfordcars-vqa/train",
     "columns": {
       "prompt": "prompt",
       "response": "response",
@@ -151,24 +63,8 @@
       "images": "image"
     }
   },
-  "imagewikiqa_vqa": {
-    "file_name": "/pasteur2/u/lihe50hz/imagewikiqa-vqa",
-    "columns": {
-      "prompt": "prompt",
-      "response": "response",
-      "images": "image"
-    }
-  },
   "imagewikiqa_vqa_json": {
     "file_name": "/pasteur2/u/lihe50hz/imagewikiqa-vqa-json/test/test.json",
-    "columns": {
-      "prompt": "prompt",
-      "response": "response",
-      "images": "image"
-    }
-  },
-  "imagenetv2_vqa": {
-    "file_name": "/pasteur2/u/lihe50hz/imagenetv2-vqa",
     "columns": {
       "prompt": "prompt",
       "response": "response",
@@ -308,101 +204,6 @@
       "images": "image"
     }
   },
-  "APP_train": {
-    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/APP/train.json",
-    "formatting": "sharegpt",
-    "columns": {
-      "messages": "conversations",
-      "images": "image"
-    }
-  },
-  "APP_test": {
-    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/APP_test/test_with_token.json",
-    "formatting": "alpaca",
-    "columns": {
-      "prompt": "text",
-      "response": "answer",
-      "images": "image"
-    }
-  },
-  "OCR_train": {
-    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/OCR/train.json",
-    "formatting": "sharegpt",
-    "columns": {
-      "messages": "conversations",
-      "images": "image"
-    }
-  },
-  "OCR_test": {
-    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/OCR_test/test_with_token_nolist.json",
-    "formatting": "alpaca",
-    "columns": {
-      "prompt": "text",
-      "response": "answer",
-      "images": "image"
-    }
-  },
-  "VP_train": {
-    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/VP/train.json",
-    "formatting": "sharegpt",
-    "columns": {
-      "messages": "conversations",
-      "images": "image"
-    }
-  },
-  "VP_test": {
-    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/VP_test/test_with_token.json",
-    "formatting": "alpaca",
-    "columns": {
-      "prompt": "text",
-      "response": "answer",
-      "images": "image"
-    }
-  },
-  "Math_train": {
-    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Math/train.json",
-    "formatting": "sharegpt",
-    "columns": {
-      "messages": "conversations",
-      "images": "image"
-    }
-  },
-  "Math_test": {
-    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Math_test/test_with_token.json",
-    "formatting": "alpaca",
-    "columns": {
-      "prompt": "text",
-      "response": "answer",
-      "images": "image"
-    }
-  },
-  "chartqa_train": {
-    "file_name": "/pasteur2/u/lihe50hz/Multi-task/ChartQA/processed/train.json",
-    "formatting": "alpaca",
-    "columns": {
-      "prompt": "question",
-      "response": "answer",
-      "images": "image_path"
-    }
-  },
-  "chartqa_val": {
-    "file_name": "/pasteur2/u/lihe50hz/Multi-task/ChartQA/processed/val.json",
-    "formatting": "alpaca",
-    "columns": {
-      "prompt": "question",
-      "response": "answer",
-      "images": "image_path"
-    }
-  },
-  "chartqa_test": {
-    "file_name": "/pasteur2/u/lihe50hz/Multi-task/ChartQA/processed/test.json",
-    "formatting": "alpaca",
-    "columns": {
-      "prompt": "question",
-      "response": "answer",
-      "images": "image_path"
-    }
-  },
   "ocrvqa_train": {
     "file_name": "/pasteur2/u/lihe50hz/Multi-task/OCR-VQA/processed/train.json",
     "formatting": "alpaca",
@@ -423,33 +224,6 @@
   },
   "ocrvqa_test": {
     "file_name": "/pasteur2/u/lihe50hz/Multi-task/OCR-VQA/processed/test.json",
-    "formatting": "alpaca",
-    "columns": {
-      "prompt": "question",
-      "response": "answer",
-      "images": "image_path"
-    }
-  },
-  "pathvqa_train": {
-    "file_name": "/pasteur2/u/lihe50hz/Multi-task/PathVQA/processed/train.json",
-    "formatting": "alpaca",
-    "columns": {
-      "prompt": "question",
-      "response": "answer",
-      "images": "image_path"
-    }
-  },
-  "pathvqa_val": {
-    "file_name": "/pasteur2/u/lihe50hz/Multi-task/PathVQA/processed/val.json",
-    "formatting": "alpaca",
-    "columns": {
-      "prompt": "question",
-      "response": "answer",
-      "images": "image_path"
-    }
-  },
-  "pathvqa_test": {
-    "file_name": "/pasteur2/u/lihe50hz/Multi-task/PathVQA/processed/test.json",
     "formatting": "alpaca",
     "columns": {
       "prompt": "question",
@@ -491,57 +265,6 @@
   },
   "bsccm_vqa_test": {
     "file_name": "/pasteur2/u/lihe50hz/BSCCM_vqa/test_vqa_dataset.json",
-    "columns": {
-      "prompt": "question",
-      "response": "answer",
-      "images": "image"
-    }
-  },
-  "domain_sample20": {
-    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Domain_data_list_sample20.json",
-    "formatting": "sharegpt",
-    "columns": {
-      "messages": "conversations",
-      "images": "image"
-    }
-  },
-  "ability_sample20": {
-    "file_name": "/pasteur2/u/lihe50hz/MLLM-CL/Ability_data_list_sample20.json",
-    "formatting": "sharegpt",
-    "columns": {
-      "messages": "conversations",
-      "images": "image"
-    }
-  },
-  "medical_vqa_train": {
-    "file_name": "/pasteur2/u/lihe50hz/ML4H/Medical-VQA/vqa-rad/train.json",
-    "formatting": "sharegpt",
-    "columns": {
-      "messages": "conversations",
-      "images": "image"
-    }
-  },
-  "medical_vqa_test": {
-    "file_name": "/pasteur2/u/lihe50hz/ML4H/Medical-VQA/vqa-rad/test.json",
-    "formatting": "alpaca",
-    "columns": {
-      "prompt": "instruction",
-      "response": "output",
-      "images": "image"
-    }
-  },
-  "radiology_vqa_train": {
-    "file_name": "/pasteur2/u/lihe50hz/ML4H/ROCOv2/train.json",
-    "formatting": "alpaca",
-    "columns": {
-      "prompt": "question",
-      "response": "answer",
-      "images": "image"
-    }
-  },
-  "radiology_vqa_test": {
-    "file_name": "/pasteur2/u/lihe50hz/ML4H/ROCOv2/test.json",
-    "formatting": "alpaca",
     "columns": {
       "prompt": "question",
       "response": "answer",
