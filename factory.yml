@@ -1,4 +1,4 @@
-name: vlm-forget
+name: factory
 channels:
   - defaults
 dependencies:

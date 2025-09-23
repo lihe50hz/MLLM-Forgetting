@@ -207,10 +207,6 @@ marimo/_lsp/
 __marimo__/
 
 # output directory
-output/
+outputs/
 wandb/
-cache/
-wandb/
-saves/
-data/flaviagiammarino/
-working/
+datasets/
