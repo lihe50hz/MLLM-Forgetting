@@ -209,4 +209,4 @@ __marimo__/
 # output directory
 outputs/
 wandb/
-datasets/
+vlm-forgetting-datasets/
